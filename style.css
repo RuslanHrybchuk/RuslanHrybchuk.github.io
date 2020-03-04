@@ -1,0 +1,237 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.div {
+    position: absolute;
+    left: 0px;
+    bottom: -1px;
+    width: 93.7%;
+    height: 100%;
+    background: url(img/LowMin.png) left bottom no-repeat;
+    background-size: 42.63%, 42.67%;
+}
+
+.glare {
+    position: absolute;
+    background: url(img/glare111.png);
+    background-size: cover;
+    width: 200px;
+    height: 100px;
+    left: 15%;
+    bottom: 44%;
+    animation: glare 5s linear infinite;
+}
+
+@keyframes glare {
+    0% {left: -8%; bottom: 41%;}
+    3% {left: -5.2%; bottom: 39%;}
+    30% {left: 6.5%; bottom: 53%;}
+    55% {left: 18.9%; bottom: 38.9%;}
+    69% {left: 19.7%; bottom: 10%;}
+    95% {left: 31.3%; bottom: -4%;}
+    100% {left: 32%; bottom: -9%;}
+}
+
+.glitch1, .glitch2, .glitch3 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0%;
+    bottom: 0%;
+    z-index: -10;
+}
+
+.glitch1 {
+    /* background: url(img/R.png) left bottom no-repeat; */
+    background-size: 93.7% !important;
+    mix-blend-mode: screen;
+    animation: glitch1 6s ease-in-out infinite;
+}
+
+@keyframes glitch1 {
+    0% {left: 0%; bottom: 0%;}
+    15% {left: -1%; bottom: -1%;}
+    40% {left: 0%; bottom: 0%;}
+    100% {left: 0%; bottom: 0%;}
+}
+
+.glitch2 {
+    /* background: url(img/G.png) left bottom no-repeat; */
+    background-size: 93.7% !important;
+    mix-blend-mode: screen;
+}
+
+.glitch3 {
+    /* background: url(img/B.png) left bottom no-repeat; */
+    background-size: 93.7% !important;
+    mix-blend-mode: screen;
+    left: 1%;
+    bottom: 1%;
+    animation: glitch3 6s ease-in-out infinite;
+}
+
+@keyframes glitch3 {
+    0% {left: 0%; bottom: 0%;}
+    15% {left: 1%; bottom: 1%;}
+    40% {left: 0%; bottom: 0%;}
+    100% {left: 0%; bottom: 0%;}
+}
+
+
+
+.running_line_1 {
+    position: absolute;
+    right: 3.1%;
+    width: 3.2%;
+    height: 100%;
+    background: url(img/M.png) center center no-repeat;
+    background-size: cover;
+    animation: redline 9s linear infinite;
+}
+
+@keyframes redline {
+    0% {bottom: 0%}
+    100% {bottom: -100%;}
+}
+
+.running_line1 {
+    position: absolute;
+    right: 3.1%;
+    width: 3.2%;
+    height: 100%;
+    background: url(img/M.png) center center no-repeat;
+    background-size: cover;
+    animation: redline1 9s linear infinite;
+}
+
+@keyframes redline1 {
+    0% {bottom: 100%}
+    100% {bottom: 0%;}
+}
+
+.running_line_2 {
+    position: absolute;
+    right: 0%;
+    width: 3.1%;
+    height: 100%;
+    background: url(img/S.png) center center no-repeat;
+    background-size: cover;
+    animation: radiobunny 6s linear infinite;
+}
+
+@keyframes radiobunny {
+    0% {bottom: 0%;}
+    100% {bottom: 100%;}
+}
+
+.running_line2 {
+    position: absolute;
+    right: 0%;
+    width: 3.1%;
+    height: 100%;
+    background: url(img/S.png) center center no-repeat;
+    background-size: cover;
+    animation: radiobunny1 6s linear infinite;
+}
+
+@keyframes radiobunny1 {
+    0% {bottom: -100%;}
+    100% {bottom: 0%;}
+}
+
+.logo {
+    position: relative;
+    margin-top: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    height: 382px;
+    z-index: 9998;
+}
+
+.logo_1 {
+    position: absolute;
+    left: 73px;
+    top: 114px;
+    width: 188px;
+    height: 121px;
+    z-index: 9999;
+    background: url(1.png) center center no-repeat;
+    animation: M 4s cubic-bezier(0.6, 0, 0, 0.8) 1 forwards;
+}
+
+@keyframes M {
+    0% {left: -270px; top: 914px;}
+    50% {left: 223px; top: 114px;}
+    60% {left: 223px; top: 114px;}
+    100% {left: 71px; top: 114px;}
+}
+
+.logo_2 {
+    position: absolute;
+    left: 517px;
+    top: 107px;
+    width: 187px;
+    height: 129px;
+    z-index: 9999;
+    background: url(2.png) center center no-repeat;
+    animation: S 4s cubic-bezier(0.6, 0, 0, 0.8) 1 forwards;
+}
+
+@keyframes S {
+    0% {left: 865px; top: -707px;}
+    50% {left: 357px; top: 107px;}
+    60% {left: 357px; top: 107px;}
+    100% {left: 517px; top: 107px;}
+}
+
+.logo_3 {
+    position: absolute;
+    left: 192px;
+    top: 64px;
+    width: 368px;
+    height: 244px;
+    background: url(3.png) center center no-repeat;
+    animation: S3 4s cubic-bezier(0.6, 0, 0, 0.8) 1 forwards;
+}
+
+@keyframes S3 {
+    0% {transform:scale(0)}
+    60% {transform:scale(0)}
+    100% {transform:scale(1)}
+}
+
+.logo_4 {
+    position: absolute;
+    left: 392px;
+    top: 75px;
+    width: 368px;
+    height: 244px;
+    background: url(4.png) center center no-repeat;
+    animation: S4 4s ease-out 1 forwards;
+}
+
+@keyframes S4 {
+    0% {left: 372px; filter: opacity(0%);}
+    75% {left: 372px; filter: opacity(0%);}
+    100% {left: 507px; filter: opacity(100%);}
+}
+
+.logo_5 {
+    position: absolute;
+    left: 37px;
+    top: 7px;
+    width: 751px;
+    height: 359px;
+    background: url(5.png) center center no-repeat;
+    animation: S5 5s linear 1 forwards;
+}
+
+@keyframes S5 {
+    0% {filter: opacity(0%);}
+    85% {filter: opacity(0%);}
+    100% {filter: opacity(100%);}
+}
