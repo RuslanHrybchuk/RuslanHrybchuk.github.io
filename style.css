@@ -10,8 +10,8 @@ html, body {
     bottom: -1px;
     width: 93.7%;
     height: 100%;
-    background: url(img/LowMin.png) left bottom no-repeat;
-    background-size: 42.63%, 42.67%;
+    background: url(img/Low.png) left bottom no-repeat;
+    background-size: 100% 100% ;
 }
 
 .glare {
@@ -26,13 +26,13 @@ html, body {
 }
 
 @keyframes glare {
-    0% {left: -8%; bottom: 41%;}
-    3% {left: -5.2%; bottom: 39%;}
-    30% {left: 6.5%; bottom: 53%;}
-    55% {left: 18.9%; bottom: 38.9%;}
-    69% {left: 19.7%; bottom: 10%;}
-    95% {left: 31.3%; bottom: -4%;}
-    100% {left: 32%; bottom: -9%;}
+    0% {left: -8%; bottom: 38%;}
+    3% {left: -5%; bottom: 36%;}
+    30% {left: 6.9%; bottom: 49%;}
+    55% {left: 19.3%; bottom: 37%;}
+    69% {left: 20%; bottom: 10%;}
+    95% {left: 32%; bottom: -3%;}
+    100% {left: 33%; bottom: -9%;}
 }
 
 .glitch1, .glitch2, .glitch3 {
@@ -46,7 +46,7 @@ html, body {
 
 .glitch1 {
     /* background: url(img/R.png) left bottom no-repeat; */
-    background-size: 93.7% !important;
+    background-size: 93.7% 100% !important;
     mix-blend-mode: screen;
     animation: glitch1 6s ease-in-out infinite;
 }
@@ -60,13 +60,13 @@ html, body {
 
 .glitch2 {
     /* background: url(img/G.png) left bottom no-repeat; */
-    background-size: 93.7% !important;
+    background-size: 93.7% 100%!important;
     mix-blend-mode: screen;
 }
 
 .glitch3 {
     /* background: url(img/B.png) left bottom no-repeat; */
-    background-size: 93.7% !important;
+    background-size: 93.7% 100% !important;
     mix-blend-mode: screen;
     left: 1%;
     bottom: 1%;
@@ -234,4 +234,16 @@ html, body {
     0% {filter: opacity(0%);}
     85% {filter: opacity(0%);}
     100% {filter: opacity(100%);}
+}
+
+@media  screen and (min-width: 1920px) {
+    @keyframes glare {
+        0% {left: -8%; bottom: 38%;}
+        6% {left: -2%; bottom: 39%;}
+        30% {left: 9%; bottom: 51%;}
+        55% {left: 21.5%; bottom: 37.5%;}
+        69% {left: 22%; bottom: 12%;}
+        95% {left: 34%; bottom: -2.3%;}
+        100% {left: 35%; bottom: -9%;}
+    }
 }
